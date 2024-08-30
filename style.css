@@ -113,7 +113,8 @@ body {
 }
 
 .right-content button,
-article button
+article button,
+.portofolio-box button
  {
   padding: 8px 16px;
   background-color: var(--black);
@@ -126,7 +127,8 @@ article button
 }
 
 .right-content button:hover,
-article button:hover {
+article button:hover,
+.portofolio-box button:hover {
   background-color: rgb(71, 71, 71);
 }
 
@@ -237,7 +239,28 @@ article button {
 }
 
 .portofolio-box h2,
-.portofolio-box p {
+.portofolio-box p,
+ {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.image-parent {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.cloud-tag {
+  background-color: var(--web);
+  position: absolute;
+  bottom: 0rem;
+  left: 0.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+ padding: 4px;
+}
+
+.portofolio-box button {
+  margin: 10px;
 }
