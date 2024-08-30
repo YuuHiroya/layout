@@ -13,6 +13,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Styling for the navbar */
@@ -112,9 +113,10 @@ body {
   padding-right: 5rem;
 }
 
-.right-content button,
+/* .right-content button,
 article button,
-.portofolio-box button {
+.portofolio-container button, */
+ button {
   padding: 8px 16px;
   background-color: var(--black);
   border: none;
@@ -125,9 +127,10 @@ article button,
   transition: background-color 0.3s ease;
 }
 
-.right-content button:hover,
+/* .right-content button:hover,
 article button:hover,
-.portofolio-box button:hover {
+.portofolio-box button:hover, */
+button:hover {
   background-color: rgb(71, 71, 71);
 }
 
@@ -199,10 +202,11 @@ article h1,
 
 .icon-container img,
 .image-container p {
-  padding: px;
+  padding: 10px;
 }
 
-article button {
+article button,
+.portofolio-container button{
   margin: 2rem auto;
   display: flex;
 }
@@ -229,6 +233,7 @@ article button {
 
 
 /* portofolio container  */
+
 
 .portofolio-container select {
   padding: 10px 1.5rem;
@@ -311,3 +316,4 @@ article button {
   flex-wrap: wrap;
   justify-content: center;
 }
+
