@@ -97,12 +97,14 @@ body {
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.9rem;
   font-weight: bold;
   padding-right: 5rem;
 }
 
-.right-content button {
+.right-content button,
+article button
+ {
   padding: 8px 16px;
   background-color: var(--black);
   border: none;
@@ -113,7 +115,8 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.right-content button:hover {
+.right-content button:hover,
+article button:hover {
   background-color: rgb(71, 71, 71);
 }
 
@@ -151,19 +154,21 @@ body {
   }
 }
 
-article h1 {
+article h1, .service-container h1 {
     text-align: center;
     padding: 3rem;
+    font-size: 2rem;
 }
 
-.container {
+.container,
+.box-service-container {
     display: flex;
     margin: 2rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.box-article {
+.box-article, .box-service {
     max-width: 300px;
     border-radius: 10px;
     margin: 10px;
@@ -173,11 +178,38 @@ article h1 {
 .box-article img {
     border-radius: 10px 10px 0 0 ;
 }
-.icon-container {
+.icon-container{
     display: flex;
     align-items: center;
 }
 
 .icon-container img, .image-container p {
     padding: 10px;
+}
+
+article button {
+  margin: 2rem auto;
+  display: flex;
+}
+
+.service-container h1 {
+  color: white;
+  
+}
+
+.service-container {
+  background-color: var(--black);
+ padding: 2rem;
+}
+
+.service-container {
+  color:var(--black);
+  
+}
+
+.box-service {
+  width: 18rem;
+  border: 1px solid white;
+  padding: 1rem;
+  background-color: white;
 }
