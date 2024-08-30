@@ -151,6 +151,28 @@ body {
   }
 }
 
+article h1 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.container {
+    display: flex;
+    margin: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-article {
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.box-article img {
+    border-radius: 10px 10px 0 0 ;
+}
 .icon-container {
     display: flex;
     align-items: center;
