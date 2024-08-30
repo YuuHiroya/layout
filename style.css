@@ -43,12 +43,21 @@ body {
   margin: 0;
 }
 
-/* Styling for each navigation link */
+
 .nav-links li {
   margin: 0 20px;
 }
 
-/* Styling for the navigation link anchor tags */
+.menu-icon {
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+
+
+
 .nav-links li a {
   text-decoration: none;
   color: #616161;
@@ -57,13 +66,13 @@ body {
   transition: color 0.3s ease;
 }
 
-/* Hover and active state for navigation link anchor tags */
+
 .nav-links li a:hover,
 .nav-links li a:active {
-  color: white; /* Changes color on hover and active */
+  color: white; 
 }
 
-/* Styling for the container of the Register and Login buttons */
+
 .nav-buttons {
   display: flex;
 }
@@ -88,7 +97,7 @@ body {
   color: white;
 }
 
-/* Centers the nav links */
+
 .nav-center {
   display: flex;
   justify-content: center;
@@ -173,7 +182,7 @@ article h1,
 .portofolio-container h1,
 .testimonial-container h1 {
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
   font-size: 2rem;
 }
 
@@ -218,7 +227,7 @@ article button,
 
 .service-container {
   background-color: var(--black);
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .service-container {
@@ -226,7 +235,6 @@ article button,
 }
 
 .box-service {
-  width: 18rem;
   border: 1px solid white;
   padding: 1rem;
   background-color: white;
@@ -418,7 +426,7 @@ article button,
 .footer-social .social-icon img {
   width: 30px; 
   height: 30px; 
-  border-radius: 50%; 
+  
   transition: transform 0.3s ease; 
 }
 
@@ -430,3 +438,21 @@ article button,
   text-align: center;
 }
 
+@media(max-width: 900px) { 
+  footer {
+    font-size: 80%;
+  }
+
+  .social-icon img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media(max-width: 680px) { 
+  footer {
+    font-size: 60%;
+  }
+
+  
+}
