@@ -199,7 +199,7 @@ article h1,
 
 .icon-container img,
 .image-container p {
-  padding: 2px;
+  padding: px;
 }
 
 article button {
@@ -247,7 +247,7 @@ article button {
 
 .image-parent {
   width: 400px;
-  height: 400px;
+  height: 300px;
   position: relative;
 }
 
@@ -262,7 +262,7 @@ article button {
 }
 
 .portofolio-box {
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 10px;
   margin: 10px;
 }
@@ -276,3 +276,30 @@ article button {
   justify-content: space-between;
 }
 
+.icon-container-portofolio,
+.icon-container-portofolio img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.icon-container-portofolio div{
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+
+.icon-container-portofolio p {
+  font-size: 12px;
+}
+
+ hr {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.portofolio-boxs {
+  display: flex;
+  flex-wrap: wrap;
+}
