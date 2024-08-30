@@ -1,155 +1,161 @@
-:root{
-    --lighttext: #616161;
-    --black:#1A1A1A;
-    --blue: #37CFFF;
-    --darkblue: #005874;
-    --bordercolor:#D9D9D9;
-    --web: #85FF99;
-    --sales: #FF5B82;
-    --patner: #FFE178;
-
+:root {
+  --lighttext: #616161;
+  --black: #1a1a1a;
+  --blue: #37cfff;
+  --darkblue: #005874;
+  --bordercolor: #d9d9d9;
+  --web: #85ff99;
+  --sales: #ff5b82;
+  --patner: #ffe178;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Styling for the navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #1A1A1A;
-    color: #616161;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1a1a1a;
+  color: #616161;
 }
-
 
 /* Styling for the navigation links */
 .nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Styling for each navigation link */
 .nav-links li {
-    margin: 0 15px;
+  margin: 0 20px;
 }
 
 /* Styling for the navigation link anchor tags */
 .nav-links li a {
-    text-decoration: none;
-    color: #616161;
-    font-size: 16px;
-    padding: 5px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #616161;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.3s ease;
 }
 
 /* Hover and active state for navigation link anchor tags */
 .nav-links li a:hover,
 .nav-links li a:active {
-    color: white; /* Changes color on hover and active */
+  color: white; /* Changes color on hover and active */
 }
 
 /* Styling for the container of the Register and Login buttons */
 .nav-buttons {
-    display: flex;
+  display: flex;
 }
 
 /* Styling for each button */
 .nav-buttons button {
-    margin-left: 10px;
-    padding: 8px 16px;
-    background-color: #ffffff;
-    border: none;
-    color: var(--black);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: none;
+  color: var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover and active state for each button */
 .nav-buttons button:hover,
 .nav-buttons button:active {
-    background-color: var(--black); 
-    color: white;
+  background-color: var(--black);
+  color: white;
 }
 
 /* Centers the nav links */
 .nav-center {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .main-container {
-    display: flex;
-    padding: 2%;
+  display: flex;
+  padding: 2%;
+  justify-content: center;
 }
 
 .right-content {
-            width: 50%;
-            font-size: 20px;
-        }
+  width: 50%;
+  font-size: 20px;
+}
 
 .title {
-            font-size: 4rem;
-            font-weight: bold;
-            padding-right: 5rem;
-        }
+  font-size: 4rem;
+  font-weight: bold;
+  padding-right: 5rem;
+}
 
 .right-content button {
-    padding: 8px 16px;
-    background-color: var(--black);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+  padding: 8px 16px;
+  background-color: var(--black);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .right-content button:hover {
-    background-color: rgb(71, 71, 71);
+  background-color: rgb(71, 71, 71);
 }
 
-
-
-.image-container{
-    width: 700px;
-    height: 600px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    text-align: center;
+.image-container {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
 }
 
-.image-container .coloseal{
-    display: flex;
-    width: 100%;
-    animation: slide 9s infinite;
+.image-container .coloseal {
+  display: flex;
+  width: 100%;
+  animation: slide 9s infinite;
 }
 
 .image-container .coloseal img {
-    width: 100%;
+  width: 100%;
 }
 
 @keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    33.33% {
-        transform: translateX(-100%);
-    }
-    66.66% {
-        transform: translateX(-200%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img, .image-container p {
+    padding: 10px;
 }
