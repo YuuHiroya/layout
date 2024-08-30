@@ -17,15 +17,24 @@ body {
 
 /* Styling for the navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 20px;
   background-color: #1a1a1a;
   color: #616161;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
-/* Styling for the navigation links */
+.container-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -88,6 +97,7 @@ body {
 .main-container {
   display: flex;
   padding: 2%;
+  padding-top:7% ;
   justify-content: center;
 }
 
@@ -154,7 +164,7 @@ article button:hover {
   }
 }
 
-article h1, .service-container h1 {
+article h1, .service-container h1, .portofolio-container h1 {
     text-align: center;
     padding: 3rem;
     font-size: 2rem;
@@ -168,14 +178,15 @@ article h1, .service-container h1 {
     justify-content: center;
 }
 
-.box-article, .box-service {
+.box-article, .box-service, .portofolio-box {
     max-width: 300px;
     border-radius: 10px;
     margin: 10px;
     
 }
 
-.box-article img {
+.box-article img,
+.portofolio-box img {
     border-radius: 10px 10px 0 0 ;
 }
 .icon-container{
@@ -212,4 +223,21 @@ article button {
   border: 1px solid white;
   padding: 1rem;
   background-color: white;
+}
+
+.portofolio-container select  {
+  padding: 10px 1.5rem;
+  border: 1px solid var(--bordercolor);
+  margin-left: 5rem;
+  font-size: 1rem;
+}
+
+.portofolio-box {
+  border: 1px solid var(--bordercolor);
+}
+
+.portofolio-box h2,
+.portofolio-box p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
