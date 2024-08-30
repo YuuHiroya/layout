@@ -376,7 +376,7 @@ article button,
 
 .footer {
   background-color: #1c1c1c; 
-  color: #d3d3d3; 
+  color: var(--lighttext);
   padding: 20px 0;
   text-align: center; 
   bottom: 0;
@@ -424,5 +424,9 @@ article button,
 
 .footer-social .social-icon img:hover {
   transform: scale(1.1);
+}
+
+.copyright {
+  text-align: center;
 }
 
