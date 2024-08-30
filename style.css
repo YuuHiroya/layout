@@ -76,7 +76,8 @@ body {
 /* Hover and active state for each button */
 .nav-buttons button:hover,
 .nav-buttons button:active {
-    background-color: #0056b3; /* Changes color on hover and active */
+    background-color: var(--black); 
+    color: white;
 }
 
 /* Centers the nav links */
@@ -101,3 +102,27 @@ body {
             font-weight: bold;
             padding-right: 5rem;
         }
+
+.right-content button {
+    padding: 8px 16px;
+    background-color: var(--black);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.right-content button:hover {
+    color: var(--black);
+    background-color: white;
+}
+
+.image-container img {
+            width: 900px;
+            height: 400px;
+            object-fit: cover;
+}
+
+
