@@ -115,14 +115,41 @@ body {
 }
 
 .right-content button:hover {
-    color: var(--black);
-    background-color: white;
-}
-
-.image-container img {
-            width: 900px;
-            height: 400px;
-            object-fit: cover;
+    background-color: rgb(71, 71, 71);
 }
 
 
+
+.image-container{
+    display: flex;
+    width: 615px;
+    height: 500px;
+    position: fixed;
+    overflow: hidden;
+}
+
+.image-container .coloseal{
+    display: flex;
+    width: 100%;
+    animation: slide 9s infinite;
+}
+
+.image-container .coloseal img {
+    width: 100%;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
