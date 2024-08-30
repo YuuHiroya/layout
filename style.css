@@ -1,0 +1,103 @@
+:root{
+    --lighttext: #616161;
+    --black:#1A1A1A;
+    --blue: #37CFFF;
+    --darkblue: #005874;
+    --bordercolor:#D9D9D9;
+    --web: #85FF99;
+    --sales: #FF5B82;
+    --patner: #FFE178;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1A1A1A;
+    color: #616161;
+}
+
+
+/* Styling for the navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for each navigation link */
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Styling for the navigation link anchor tags */
+.nav-links li a {
+    text-decoration: none;
+    color: #616161;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover and active state for navigation link anchor tags */
+.nav-links li a:hover,
+.nav-links li a:active {
+    color: white; /* Changes color on hover and active */
+}
+
+/* Styling for the container of the Register and Login buttons */
+.nav-buttons {
+    display: flex;
+}
+
+/* Styling for each button */
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border: none;
+    color: var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and active state for each button */
+.nav-buttons button:hover,
+.nav-buttons button:active {
+    background-color: #0056b3; /* Changes color on hover and active */
+}
+
+/* Centers the nav links */
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.main-container {
+    display: flex;
+    padding: 2%;
+}
+
+.right-content {
+            width: 50%;
+            font-size: 20px;
+        }
+
+.title {
+            font-size: 4rem;
+            font-weight: bold;
+            padding-right: 5rem;
+        }
