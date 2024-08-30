@@ -121,11 +121,12 @@ body {
 
 
 .image-container{
-    display: flex;
-    width: 615px;
-    height: 500px;
-    position: fixed;
+    width: 700px;
+    height: 600px;
+    position: relative;
+    margin: auto;
     overflow: hidden;
+    text-align: center;
 }
 
 .image-container .coloseal{
@@ -136,7 +137,6 @@ body {
 
 .image-container .coloseal img {
     width: 100%;
-
 }
 
 @keyframes slide {
